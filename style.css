@@ -1,3 +1,4 @@
+/* resets */
 :root {
     font-size: 62.5%;
 }
@@ -8,6 +9,13 @@
     box-sizing: border-box;
 }
 
+/* toggle screen */
+
+.hide {
+    display: none;
+}
+
+/* Screen 1 */
 body, button, input {
     font-family: 'DM Sans', sans-serif;
 }
@@ -15,29 +23,28 @@ body, button, input {
 body {
     background: linear-gradient(108deg, #C2E9FB 0%, #A1C4FD 100%);
     font-size: 1.6rem;
+
     display: grid;
-    height: 100vh;
     place-items: center;
+    height: 100vh;
 }
 
 main {
-    padding: 4.8rem 6.4rem 6.4rem;
-    border-radius: 0.6rem;
     background-color: #fff;
     box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.10);
     width: min(43rem, 90%);
     margin-top: 12rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    border-radius: 0.6rem;
+
     text-align: center;
 }
 
-.hide {
-    display: none;
-}
-
 h1 {
+    margin-bottom: 1.6rem;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
-    margin-bottom: 1.6rem;
 }
 
 h1, p {
@@ -67,9 +74,11 @@ input {
 
 button {
     background-color: #7879F1;
+    border-radius: 0 .4rem .4rem 0;
+
     color: #fff;
     font-weight: bold;
-    border-radius: 0 .4rem .4rem 0;
+    
     cursor: pointer;
     transition: background .3s;
 }
@@ -77,6 +86,8 @@ button {
 button:hover {
     background-color: #b0b0e2;
 }
+
+/* Screen 2 */
 
 .screen2 button {
     margin-top: 3.3rem;
